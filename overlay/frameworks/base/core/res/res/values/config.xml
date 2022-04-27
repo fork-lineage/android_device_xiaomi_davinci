@@ -290,6 +290,7 @@
     <integer name="config_udfps_illumination_transition_ms">0</integer>
 	
 	<!-- Smart charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
     <string name="config_SmartChargingResumeValue" translatable="false">0</string>
@@ -299,5 +300,10 @@
 	
 	<!-- Specify if the fingerprint hardware support gestures-->
     <bool name="config_fingerprintSupportsGestures">false</bool>
-	
+
+    <!-- Battery Health -->
+    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
+    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
+    <bool name="config_supportBatteryHealth">true</bool>
 </resources>
