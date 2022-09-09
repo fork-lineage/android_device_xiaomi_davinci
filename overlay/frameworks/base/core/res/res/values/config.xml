@@ -288,4 +288,10 @@
 
     <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
     <integer name="config_udfps_illumination_transition_ms">0</integer>
+	
+	<!-- Smart charging -->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
+	
 </resources>
